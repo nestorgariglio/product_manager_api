@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/ProductManagerApi.Presentation/">
+    <Project Path="ProductManagerApi.Presentation/ProductManagerApi.csproj" />
+  </Folder>
+  <Project Path="ProductManagerApi.Business/ProductManagerApi.Business.csproj" />
+  <Project Path="ProductManagerApi.DataAccess/ProductManagerApi.DataAccess.csproj" />
+</Solution>
