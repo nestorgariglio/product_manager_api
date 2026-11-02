@@ -4,7 +4,13 @@ namespace product_manager_api.ProductManagerApi.DataAccess.Repositories
 {
     public class ProductRepository : IProductRepository
     {
-        private readonly List<Product> _products = new List<Product>();
+        private static readonly List<Product> _products = new()
+        {
+            new Product { Id = 1, Nombre = "Teclado", Precio = 25000m, Categoria = "Electrónica", Activo = true },
+            new Product { Id = 2, Nombre = "Mouse", Precio = 15000m, Categoria = "Electrónica", Activo = true },
+            new Product { Id = 3, Nombre = "Lámpara", Precio = 30000m, Categoria = "Hogar", Activo = true },
+            new Product { Id = 4, Nombre = "Cuaderno", Precio = 5000m, Categoria = "Librería", Activo = true }
+        };
 
         public ICollection<Product> ObtenerTodos()
         {
